@@ -35,6 +35,16 @@ public class Iterador {
         return suma;
     }
     
+    public static double mediaLista(List <Integer> lista){
+        Iterator it = lista.iterator();
+        double media = 0;
+        while(it.hasNext()){
+            media+=(int)it.next();
+        }
+        media /= lista.size();
+        return media;
+    }
+    
     public static void main(String[] args) {
         List <Integer> lista1 = new LinkedList();
         llenarLista(lista1);

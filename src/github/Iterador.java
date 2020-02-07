@@ -26,9 +26,19 @@ public class Iterador {
         }
     }
     
+    public static int sumaLista(List <Integer> lista){
+        Iterator it = lista.iterator();
+        int suma=0;
+        while(it.hasNext()){
+            suma+=(int)it.next();
+        }
+        return suma;
+    }
+    
     public static void main(String[] args) {
         List <Integer> lista1 = new LinkedList();
         llenarLista(lista1);
         mostrarLista(lista1);
+        System.out.println("Suma: "+sumaLista(lista1));
     }
 }

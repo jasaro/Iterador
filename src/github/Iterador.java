@@ -33,11 +33,35 @@ public class Iterador {
         return resta;
     }
     
+    public static void llenarLista(List <Integer> lista){
+        for(int i=0;i<=10;i++){
+            lista.add(i);
+        }
+    }
+    
+    public static int sumaLista(List <Integer> lista){
+        Iterator it = lista.iterator();
+        int suma=0;
+        while(it.hasNext()){
+            suma+=(int)it.next();
+        }
+        return suma;
+    }
+    
+    public static double mediaLista(List <Integer> lista){
+        Iterator it = lista.iterator();
+        double media = 0;
+        while(it.hasNext()){
+            media+=(int)it.next();
+        }
+        media /= lista.size();
+        return media;
+    }
+    
     public static void main(String[] args) {
         List <Integer> lista1 = new LinkedList();
-        lista1.add(1);
-        lista1.add(2);
-        lista1.add(3);
+        llenarLista(lista1);
         mostrarLista(lista1);
+        System.out.println("Suma: "+sumaLista(lista1));
     }
 }

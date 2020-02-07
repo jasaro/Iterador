@@ -13,11 +13,24 @@ public class Iterador {
     
     public static void mostrarLista(List <Integer> lista){
         Iterator it = lista.iterator();
-        it = lista.iterator();
         System.out.println("RR");
         while(it.hasNext()){
             System.out.println(it.next());
         }
+    }
+    /**
+     * @author vJazz06
+     * Devuleve la suma de todos los valores contenidos en la lista
+     * @param lista Lista enlazada enviada por parámetros
+     * @return suma del valor contenido en todos los elementos
+     */
+    public static int suma(List <Integer> lista){
+        int suma=0;
+        Iterator it = lista.iterator();
+        while(it.hasNext()){
+            suma+=(int)it.next();
+        }
+        return suma;
     }
     
     public static void main(String[] args) {

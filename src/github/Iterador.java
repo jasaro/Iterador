@@ -24,13 +24,13 @@ public class Iterador {
      * @param lista Lista enlazada enviada por parámetros
      * @return suma del valor contenido en todos los elementos
      */
-    public static int suma(List <Integer> lista){
-        int suma=0;
+    public static int resta(List <Integer> lista){
+        int resta=0;
         Iterator it = lista.iterator();
         while(it.hasNext()){
-            suma+=(int)it.next();
+            resta-=(int)it.next();
         }
-        return suma;
+        return resta;
     }
     
     public static void main(String[] args) {

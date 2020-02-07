@@ -20,11 +20,15 @@ public class Iterador {
         }
     }
     
+    public static void llenarLista(List <Integer> lista){
+        for(int i=0;i<=10;i++){
+            lista.add(i);
+        }
+    }
+    
     public static void main(String[] args) {
         List <Integer> lista1 = new LinkedList();
-        lista1.add(1);
-        lista1.add(2);
-        lista1.add(3);
+        llenarLista(lista1);
         mostrarLista(lista1);
     }
 }
